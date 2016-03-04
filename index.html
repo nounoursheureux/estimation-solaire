@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <meta charset='utf8'/>
+    <title>Estimation du rendement photovoltaïque</title>
+  </head>
+  <body>
+    <h1>Estimation du rendement photovoltaïque</h1>
+    <p>
+      <label for='regions'>Région: </label>
+      <select name='regions' id="regions">
+        <option value="" disabled selected>Choisissez une région</option>
+        <option value="1150">Alsace-Champagne-Ardenne-Lorraine</option>
+        <option value="1300">Aquitaine-Limousin-Poitou-Charentes</option>
+        <option value="1300">Auvergne-Rhône-Alpes</option>
+        <option value="1200">Bourgogne-France-Comté</option>
+        <option value="1150">Bretagne</option>
+        <option value="1200">Centre-Val de Loire</option>
+        <option value="1550">Corse</option>
+        <option value="1150">Île-de-France</option>
+        <option value="1400">Languedoc-Roussillon-Midi-Pyrénées</option>
+        <option value="1150">Nord-Pas-de-Calais-Picardie</option>
+        <option value="1150">Normandie</option>
+        <option value="1200">Pays de la Loire</option>
+        <option value="1500">Provence-Alpes-Côte d'Azur</option>
+      </select>
+    </p>
+    <p>
+      <label for='surface'>Surface (en m²): </label>
+      <input type='number' name='surface' id='surface'/>
+    </p>
+    <p>
+      <label for='puissance'>Puissance du panneau (en Wc): </label>
+      <input type='number' name='puissance' id='puissance'/>
+    </p>
+    <p>
+      <button id="button">Calculer</button>
+    </p>
+    <p id="resultat"></p>
+    <script src='script.js'></script>
+  </body>
+</html>
