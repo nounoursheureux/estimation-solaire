@@ -9,5 +9,5 @@ document.getElementById('button').addEventListener('click', function() {
   var puissance_watt = irradiance_annee * puissance_crete;
   var puissance_par_m2 = puissance_watt / surface;
   var production_annee = puissance_par_m2 * 365.24 * 24;
-  document.getElementById('resultat').innerHTML = "Estimation de la production: " + production_annee.toFixed(0) + " kWh / an";
+  document.getElementById('resultat').innerHTML = "Estimation de la production: " + (production_annee / 1000).toPrecision(3) + " kWh / an";
 });
